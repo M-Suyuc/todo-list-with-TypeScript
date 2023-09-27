@@ -13,22 +13,17 @@ import { Header } from './componets/Header'
 const mocksTodos = [
   {
     id: '1',
-    title: 'todo',
+    title: '1',
     completed: false
   },
   {
     id: '2',
-    title: 'todo 2',
-    completed: true
-  },
-  {
-    id: '3',
-    title: 'todo 3',
+    title: '2',
     completed: false
   }
 ]
 
-const App = (): JSX.Element => {
+const App: React.FC = () => {
   const [todos, setTodos] = useState(mocksTodos)
   const [filterSelected, setFilterSelected] = useState<FilterValues>(
     TODO_FILTERS.ALL
